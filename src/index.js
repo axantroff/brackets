@@ -6,7 +6,7 @@ module.exports = function check(str, bracketsConfig) {
           str = str.replace(bracketsCollection, '');
         }
     }
-    if (!str)
+    if (!str || str === '')
         return true
     else
         return false
